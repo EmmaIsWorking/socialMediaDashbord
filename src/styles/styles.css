@@ -1,6 +1,5 @@
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -12,6 +11,21 @@ p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #63687e;
+  font-size: 14px;
+}
+h3 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  color: #63687e;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 14px;
+}
+.facebook {
+  font-size: 24px;
+  color: #00bfff;
+  margin: 0 5px;
 }
 body {
   padding: 0;
@@ -31,4 +45,40 @@ nav {
   align-items: center;
   justify-items: end;
   justify-content: flex-end;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.container_card {
+  border-top: 4px solid #00bfff;
+  border-radius: 10px;
+  background-color: #f5f7ff;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.container_card p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #63687e;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.container_card-followers {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.container_card-followers p {
+  font-size: 60px;
+  margin: 0;
+}
+.container_card-today {
+  color: #1db489 !important;
 }

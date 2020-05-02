@@ -1,0 +1,24 @@
+.container
+  mixin-grid(repeat(4,1fr))
+
+.container_card
+  mixin-border()
+  background-color: blue_pale
+  align-content: center
+  mixin-flex()
+  flex-direction: column
+  p
+    mixin-paragraph(blue_medium, 12px)
+    display: flex
+    align-items: center
+
+.container_card-followers
+  mixin-flex()
+  flex-direction: column
+  p
+    font-size: font_size_counter
+    margin 0
+
+.container_card-today
+  color: green !important
+

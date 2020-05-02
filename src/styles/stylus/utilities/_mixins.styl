@@ -3,10 +3,20 @@ mixin-grid(columns)
   grid-template-columns: columns
   align-items: center
 
-mixin-paragraph()
+mixin-paragraph(color=blue_medium, size = font_size)
   font-family: font
   font-weight: weight_bold
-  color: blue_medium
+  color: color
+  font-size: size
+
+mixin-followers(color=blue_medium)
+  font-family: font
+  margin: 0
+  font-weight: weight_regular
+  color: color
+  text-transform: uppercase
+  letter-spacing: letter-spacing
+  font-size: font_size
 
 mixin-header()
   font-family: font
@@ -17,3 +27,12 @@ mixin-flex(position= center)
   display: flex
   align-items: center
   justify-items: position
+
+mixin-border(border-color = facebook)
+  border-top: 4px solid border-color
+  border-radius: 10px
+
+mixin-facebook-icon()
+  font-size: font-size_icons
+  color: facebook
+  margin: margin-icon
