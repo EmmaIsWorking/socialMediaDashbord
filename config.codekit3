@@ -186,6 +186,31 @@
 		"oAP": "\/index2.html",
 		"oF": 0
 		},
+	"\/readme-instructions.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/readme-instructions.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -240,16 +265,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/src\/styles\/stylus\/layout\/_body.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/src\/styles\/stylus\/layout\/_body-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/src\/styles\/stylus\/layout\/_body.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -301,16 +316,6 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
-		},
-	"\/src\/styles\/stylus\/utilities\/_variables.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/src\/styles\/stylus\/utilities\/_variables-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/src\/styles\/stylus\/utilities\/_variables.styl": {
 		"aP": 0,

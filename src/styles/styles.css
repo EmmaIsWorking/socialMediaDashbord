@@ -1,9 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #63687e;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #63687e;
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 0 5%;
 }
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  justify-content: flex-end;
 }

@@ -1,3 +1,7 @@
 nav
-  display: grid
-  grid-template-columns: 1fr 1fr
+  mixin-grid(1fr 1fr)
+  justify-content: space-around
+
+.toggleContainer
+  mixin-flex(end)
+  justify-content: flex-end
