@@ -1,6 +1,7 @@
-mixin-grid(columns)
+mixin-grid(columns, spacing= spacing-grap)
   display: grid
   grid-template-columns: columns
+  grid-gap: spacing
   align-items: center
 
 mixin-paragraph(color=blue_medium, size = font_size)
@@ -25,14 +26,21 @@ mixin-header()
 
 mixin-flex(position= center)
   display: flex
-  align-items: center
-  justify-items: position
+  align-items: position
 
-mixin-border(border-color = facebook)
-  border-top: 4px solid border-color
-  border-radius: 10px
+mixin-border(background-color = facebook)
+  border-top: 4px solid transparent
+  background: background-color
+  border-radius: border-radius
 
-mixin-facebook-icon()
-  font-size: font-size_icons
-  color: facebook
-  margin: margin-icon
+mixin_cardOverview()
+  mixin-grid(repeat(2,1fr), 0)
+  grid-template-rows: 1fr 1fr
+  border: 1px solid transparent
+  border-radius: border-radius
+  box-sizing: border-box
+  padding: 10px 30px
+  min-width: 240px;
+  min-height: 100px
+
+

@@ -1,24 +1,35 @@
-.container
+.countersContainer
   mixin-grid(repeat(4,1fr))
 
-.container_card
+.container_background-facebook
   mixin-border()
+.container_background-twitter
+  mixin-border(twitter)
+.container_background-instagram
+  mixin-border(instagram)
+.container_background-youtube
+  mixin-border(youtube)
+
+.countersContainer_card
   background-color: blue_pale
   align-content: center
   mixin-flex()
   flex-direction: column
+  min-width: 240px;
   p
-    mixin-paragraph(blue_medium, 12px)
+    mixin-paragraph(blue_medium, font-size-small)
     display: flex
     align-items: center
+    img
+      margin: margin-icon
 
-.container_card-followers
+.countersContainer_card-followers
   mixin-flex()
   flex-direction: column
   p
     font-size: font_size_counter
     margin 0
 
-.container_card-today
+.countersContainer_card-today
   color: green !important
 

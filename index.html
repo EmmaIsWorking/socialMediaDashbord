@@ -7,8 +7,6 @@
   <title>Frontend Mentor | Emmanuel García</title>
   <link rel="stylesheet" href="/src/styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
   <!-- HEADER -->
@@ -24,31 +22,80 @@
   </nav>
 
   <!-- COUNTERS -->
-  <section class="container">
-    <div class="container_card">
-      <p><i class="fab fa-facebook-square facebook"></i>@nathanf</p>
-      <div class="container_card-followers">
-        <p>1987</p>
-        <h3>Followers</h3>
+  <section class="countersContainer">
+    <div class="container_background-facebook">
+      <div class="countersContainer_card">
+        <p><img src="/images/icon-facebook.svg" alt="facebook">@nathanf</p>
+        <div class="countersContainer_card-followers">
+          <p>1987</p>
+          <h3>Followers</h3>
+        </div>
+        <p class="countersContainer_card-today">12 Today</p>
       </div>
-      <p class="container_card-today">12 Today</p>
+    </div>
+
+    <div class="container_background-twitter">
+      <div class="countersContainer_card">
+        <p><img src="/images/icon-twitter.svg" alt="">@nathanf</p>
+        <div class="countersContainer_card-followers">
+          <p>1044</p>
+          <h3>Followers</h3>
+        </div>
+        <p class="countersContainer_card-today">99 Today</p>
+      </div>
+    </div>
+
+    <div class="container_background-instagram">
+      <div class="countersContainer_card">
+        <p><img src="/images/icon-instagram.svg" alt="instagram">@realnathanf</p>
+        <div class="countersContainer_card-followers">
+          <p>11k</p>
+          <h3>Followers</h3>
+        </div>
+        <p class="countersContainer_card-today">1099 Today
+        </p>
+      </div>
+    </div>
+
+    <div class="container_background-youtube">
+      <div class="countersContainer_card">
+        <p><img src="/images/icon-youtube.svg" alt="youtube">Nathan F.</p>
+        <div class="countersContainer_card-followers">
+          <p>8239</p>
+          <h3>Subscribers</h3>
+        </div>
+        <p class="countersContainer_card-today">144 Today</p>
+      </div>
     </div>
   </section>
 
   <!-- OVERVIEW -->
 
-  <section class="container">
-    <div class="card">
-      <div>
+  <section class="overview">
+    <div class="overview_card">
         <p>Pages Views</p>
-        <p>87</p>
-      </div>
-      <div>
-        <i>icon</i>
-        <p>3%</p>
-      </div>
+        <img src="/images/icon-facebook.svg" alt="facebook">
+        <p class="overview_card-view">87</p>
+        <p class="overview_card-percentage">3%</p>
     </div>
-    
+    <div class="overview_card">
+        <p>Pages Views</p>
+        <img src="/images/icon-twitter.svg" alt="facebook">
+        <p class="overview_card-view">87</p>
+        <p class="overview_card-percentage">3%</p>
+    </div>
+    <div class="overview_card">
+        <p>Pages Views</p>
+        <img src="/images/icon-instagram.svg" alt="facebook">
+        <p class="overview_card-view">87</p>
+        <p class="overview_card-percentage">3%</p>
+    </div>
+    <div class="overview_card">
+        <p>Pages Views</p>
+        <img src="/images/icon-youtube.svg" alt="facebook">
+        <p class="overview_card-view">87</p>
+        <p class="overview_card-percentage">3%</p>
+    </div>
   </section>
 
 </body>

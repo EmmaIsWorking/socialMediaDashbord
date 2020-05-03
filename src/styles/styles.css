@@ -22,11 +22,6 @@ h3 {
   letter-spacing: 8px;
   font-size: 14px;
 }
-.facebook {
-  font-size: 24px;
-  color: #00bfff;
-  margin: 0 5px;
-}
 body {
   padding: 0;
   margin: 0;
@@ -37,31 +32,50 @@ body {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   align-items: center;
   justify-content: space-around;
 }
 .toggleContainer {
   display: flex;
   align-items: center;
-  justify-items: end;
   justify-content: flex-end;
 }
-.container {
+.countersContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   align-items: center;
 }
-.container_card {
-  border-top: 4px solid #00bfff;
+.container_background-facebook {
+  border-top: 4px solid transparent;
+  background: #00bfff;
   border-radius: 10px;
+}
+.container_background-twitter {
+  border-top: 4px solid transparent;
+  background: #1ca0f2;
+  border-radius: 10px;
+}
+.container_background-instagram {
+  border-top: 4px solid transparent;
+  background: linear-gradient(0.25turn, #fdc468, #df4996);
+  border-radius: 10px;
+}
+.container_background-youtube {
+  border-top: 4px solid transparent;
+  background: #c4032a;
+  border-radius: 10px;
+}
+.countersContainer_card {
   background-color: #f5f7ff;
   align-content: center;
   display: flex;
   align-items: center;
-  justify-items: center;
   flex-direction: column;
+  min-width: 240px;
 }
-.container_card p {
+.countersContainer_card p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #63687e;
@@ -69,16 +83,56 @@ nav {
   display: flex;
   align-items: center;
 }
-.container_card-followers {
+.countersContainer_card p img {
+  margin: 0 5px;
+}
+.countersContainer_card-followers {
   display: flex;
   align-items: center;
-  justify-items: center;
   flex-direction: column;
 }
-.container_card-followers p {
+.countersContainer_card-followers p {
   font-size: 60px;
   margin: 0;
 }
-.container_card-today {
+.countersContainer_card-today {
   color: #1db489 !important;
+}
+.overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.overview_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  min-width: 240px;
+  min-height: 100px;
+  background-color: #f5f7ff;
+}
+.overview_card p {
+  margin: 0;
+}
+.overview_card img {
+  position: relative;
+  left: 70px;
+}
+.overview_card .overview_card-view {
+  font-size: 30px;
+}
+.overview_card .overview_card-percentage {
+  text-align: end;
+  position: relative;
+  top: 7px;
+  color: #1db489;
+  font-size: 12px;
 }
