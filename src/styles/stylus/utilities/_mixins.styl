@@ -1,0 +1,73 @@
+mixin-grid(columns, spacing= spacing-grap)
+  display: grid
+  grid-template-columns: columns
+  grid-gap: spacing
+  align-items: center
+
+mixin-paragraph(color=blue_medium, size = font_size)
+  font-family: font
+  font-weight: weight_bold
+  color: var(--paragraph)
+  font-size: size
+
+mixin-followers(color=blue_medium)
+  font-family: font
+  margin: 0
+  font-weight: weight_regular
+  color: color
+  text-transform: uppercase
+  letter-spacing: letter-spacing
+  font-size: font_size
+
+mixin-header()
+  font-family: font
+  font-weight: weight_bold
+  color: var(--paragraph)
+
+mixin-flex(position= center)
+  display: flex
+  align-items: position
+
+mixin-border(background-color = facebook)
+  border-top: 4px solid transparent
+  background: background-color
+  border-radius: border-radius
+
+mixin_cardOverview()
+  mixin-grid(repeat(2,1fr), 0)
+  grid-template-rows: 1fr 1fr
+  border: 1px solid transparent
+  border-radius: border-radius
+  box-sizing: border-box
+  padding: 10px 30px
+  min-width: 240px;
+  min-height: 100px
+
+mixin_card-procentage(color= green)
+  text-align: end
+  position: relative
+  top: 7px
+  font-size: font-size-small
+  color: color
+
+mixin_switch()
+  height: 30px
+  border-radius: 24px
+  background: blue_medium
+  width: 60px
+  padding: 5px
+  box-sizing: border-box
+  cursor: pointer
+  user-select: none
+  transition: .4s
+
+mixin_switch_before()
+  content: ""
+  display: block
+  width: 20px
+  height: 20px
+  background: white
+  border-radius: 50%
+  // transform: translateX(30px)
+  transition: .4s
+  will-change: transform

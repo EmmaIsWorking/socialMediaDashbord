@@ -1,0 +1,23 @@
+.title
+  padding 0 5%
+  margin: 40px 0px 20px
+
+.overview
+  padding 0 5%
+  mixin-grid(repeat(4,1fr))
+  margin-top: spacing-grap
+
+.overview_card
+  mixin_cardOverview()
+  background-color: var(--color-card)
+  p
+    margin 0
+  .overview_card-iconSocialMedia
+    position: relative;
+    left: 77px;
+  .overview_card-view
+    font-size: (font_size_counter/2)
+  .overview_card-percentageUp
+    mixin_card-procentage(green)
+  .overview_card-percentageDown
+    mixin_card-procentage(red)
