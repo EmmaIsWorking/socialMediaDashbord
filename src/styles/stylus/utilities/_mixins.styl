@@ -49,3 +49,25 @@ mixin_card-procentage(color= green)
   top: 7px
   font-size: font-size-small
   color: color
+
+mixin_switch()
+  height: 30px
+  border-radius: 24px
+  background: blue_medium
+  width: 60px
+  padding: 5px
+  box-sizing: border-box
+  cursor: pointer
+  user-select: none
+  transition: .4s
+
+mixin_switch_before()
+  content: ""
+  display: block
+  width: 20px
+  height: 20px
+  background: white
+  border-radius: 50%
+  // transform: translateX(30px)
+  transition: .4s
+  will-change: transform

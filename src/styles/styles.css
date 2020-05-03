@@ -1,3 +1,7 @@
+bg_body: red,
+[data-theme="dark"] {
+  bg_body: #1f212e;
+}
 h1,
 h2,
 h4,
@@ -25,13 +29,13 @@ h3 {
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff;
-  max-width: 100%;
-  padding: 0 5%;
+  background-color: bg_body;
 }
 nav {
+  position: relative;
+  padding: 0 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 150px;
   grid-gap: 20px;
   align-items: center;
   justify-content: space-around;
@@ -40,17 +44,84 @@ nav h1 {
   margin-bottom: 5px;
 }
 nav p {
-  margin-top: 5px;
+  margin: 5px auto;
 }
 nav hr {
   display: none;
 }
+.header {
+  position: absolute;
+  background: #f5f7ff;
+  height: 400px;
+  z-index: 1;
+}
+.container_socialMedia {
+  position: relative;
+}
 .toggleContainer {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 23px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 2.6px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background: #aeb3cb;
+}
+input:checked + .slider:before {
+  background: #fff;
+}
+input:checked + .slider:hover {
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px linear-gradient(90deg, #378fe6, #3eda82);
+}
+input + .slider:before {
+  background: #1e202a;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }
 .countersContainer {
+  padding: 0 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -107,7 +178,12 @@ nav hr {
 .countersContainer_card-today {
   color: #1db489 !important;
 }
+.title {
+  padding: 0 5%;
+  margin: 40px 0px 20px;
+}
 .overview {
+  padding: 0 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -133,7 +209,7 @@ nav hr {
 }
 .overview_card .overview_card-iconSocialMedia {
   position: relative;
-  left: 70px;
+  left: 77px;
 }
 .overview_card .overview_card-view {
   font-size: 30px;
