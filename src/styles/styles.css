@@ -1,6 +1,15 @@
-bg_body: red,
-[data-theme="dark"] {
-  bg_body: #1f212e;
+@import "/utilities/variables.css";
+
+:root {
+  --bg_body:hsl(0, 0%, 100%) ;
+  --paragraph:hsl(228, 12%, 44%);
+  --color-card:hsl(225, 100%, 98%);
+}
+
+[data-theme="dark"]{
+    --bg_body: hsl(232, 19%, 15%);
+    --paragraph:hsl(0, 0%, 100%);
+    --color-card:hsl(230, 17%, 14%);
 }
 h1,
 h2,
@@ -9,12 +18,12 @@ h5,
 h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: #63687e;
+  color: var(--paragraph);
 }
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: #63687e;
+  color: var(--paragraph);
   font-size: 14px;
 }
 h3 {
@@ -29,7 +38,7 @@ h3 {
 body {
   padding: 0;
   margin: 0;
-  background-color: bg_body;
+  background-color: var(--bg_body);
 }
 nav {
   position: relative;
@@ -148,7 +157,7 @@ input:checked + .slider:before {
   border-radius: 10px;
 }
 .countersContainer_card {
-  background-color: #f5f7ff;
+  background-color: var(--color-card);
   align-content: center;
   display: flex;
   align-items: center;
@@ -158,7 +167,7 @@ input:checked + .slider:before {
 .countersContainer_card p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: #63687e;
+  color: var(--paragraph);
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -202,7 +211,7 @@ input:checked + .slider:before {
   padding: 10px 30px;
   min-width: 240px;
   min-height: 100px;
-  background-color: #f5f7ff;
+  background-color: var(--color-card);
 }
 .overview_card p {
   margin: 0;

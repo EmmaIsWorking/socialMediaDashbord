@@ -4,10 +4,10 @@ checkbox.checked = true;
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
-    this.checked = false;
+    checkbox.setAttribute('checked', 'false');
     body.setAttribute('data-theme', 'light');
   } else {
-    this.checked = true;
+    checkbox.setAttribute('checked', 'true');
     body.setAttribute('data-theme', 'dark');
   }
 });
