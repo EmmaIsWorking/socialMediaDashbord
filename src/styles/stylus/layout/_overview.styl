@@ -7,14 +7,12 @@
   background-color: blue_pale
   p
     margin 0
-  img
+  .overview_card-iconSocialMedia
     position: relative;
     left: 70px;
   .overview_card-view
     font-size: (font_size_counter/2)
-  .overview_card-percentage
-    text-align: end
-    position: relative
-    top: 7px
-    color: green
-    font-size: font-size-small
+  .overview_card-percentageUp
+    mixin_card-procentage(green)
+  .overview_card-percentageDown
+    mixin_card-procentage(red)
