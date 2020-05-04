@@ -242,6 +242,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/src\/styles\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/src\/styles\/stylus\/base\/_typography.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -342,6 +352,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/src\/styles\/stylus\/mediaQuery\/_mobile.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/src\/styles\/stylus\/mediaQuery\/_tablet.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/stylus\/mediaQuery\/_tablet.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
